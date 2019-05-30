@@ -1,3 +1,8 @@
-<p>
-  songbook works!
-</p>
+
+  <div *ngFor="let song of songList">
+    <button routerLink="{{song.id}}" routerLinkActive="router-link-active"  style="width: 100%">
+  <div>{{song.name}}</div>
+  <div>{{song.singer}}</div>
+</button>
+   <!--<button>Details...</button>-->
+  </div>

@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
   { path: 'songbook', loadChildren: './songbook/songbook.module#SongbookModule'},
-  { path: '', redirectTo: '/songbook', pathMatch: 'full'}
+  { path: 'homepage', component: HomepageComponent},
+  { path: '', redirectTo: '/homepage', pathMatch: 'full'}
 ];
 
 
